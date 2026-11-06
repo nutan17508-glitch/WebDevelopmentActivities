@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAT University | Admissions</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fff;
+            color: #333;
+        }
+
+        header {
+            background: #650d24;
+            color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #ffced8;
+        }
+
+        .hero {
+            min-height: 420px;
+            background: linear-gradient(
+                rgba(50, 0, 15, 0.65),
+                rgba(50, 0, 15, 0.65)
+            ), url("https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h2 {
+            font-size: 44px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #8b1738;
+            color: white;
+            padding: 13px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #450819;
+        }
+
+        section {
+            padding: 55px 7%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #650d24;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #fff;
+            width: 270px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px #ddd;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 175px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            color: #650d24;
+            margin: 15px 0 10px;
+        }
+
+        .card p {
+            padding: 0 15px 20px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        #admissions {
+            background: #fff4f6;
+        }
+
+        .steps {
+            max-width: 650px;
+            margin: 25px auto;
+            text-align: left;
+            line-height: 2.3;
+        }
+
+        .apply {
+            background: #650d24;
+            color: white;
+        }
+
+        .apply h2 {
+            color: white;
+        }
+
+        .apply p {
+            margin: 15px 0 25px;
+        }
+
+        .apply .btn {
+            background: white;
+            color: #650d24;
+        }
+
+        .contact p {
+            margin: 12px;
+        }
+
+        footer {
+            background: #380712;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>BRAT UNIVERSITY</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#courses">Courses</a>
+            <a href="#faculty">Faculty</a>
+            <a href="#admissions">Admissions</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h2>Shape Your Future With Us</h2>
+        <p>Discover Knowledge. Build Skills. Achieve Excellence.</p>
+        <a href="#admissions" class="btn">Explore Admissions</a>
+    </div>
+
+    <section id="about">
+        <h2>Welcome to BRAT University</h2>
+
+        <p class="intro">
+            BRAT University is a modern educational institution dedicated
+            to academic excellence, innovation, and personal growth.
+            We provide quality education, experienced faculty, and a
+            supportive campus environment to prepare students for the future.
+        </p>
+    </section>
+
+    <section id="courses" style="background:#fff4f6;">
+        <h2>Our Departments</h2>
+        <p>Explore our popular academic programs.</p>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Computer technology">
+                <h3>Computer Science</h3>
+                <p>Learn programming, artificial intelligence,
+                web development, and modern computing.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=600&q=80" alt="Engineering laboratory">
+                <h3>Engineering</h3>
+                <p>Develop practical engineering skills through
+                technical learning and innovation.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Business analytics">
+                <h3>Business Management</h3>
+                <p>Explore entrepreneurship, finance,
+                leadership, and business strategy.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="faculty">
+        <h2>Meet Our Faculty</h2>
+        <p>Learn from dedicated educators and experienced professionals.</p>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/67/67/1f/67671f68db0136ef76edc8ebb9c0444f.jpg?auto=format&fit=crop&w=600&q=80" alt="Faculty member">
+                <h3>Dr. Rahul Sharma</h3>
+                <p>Head of Computer Science<br>
+                Research and Technology</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/c4/e0/c6/c4e0c6fee0ec610c2632bac960fa5bdd.jpg?auto=format&fit=crop&w=600&q=80" alt="Faculty member">
+                <h3>Dr. Priya Mehta</h3>
+                <p>Professor of Engineering<br>
+                Innovation and Research</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/2e/a5/6f/2ea56fac760ffc1dbd9994f70ba0de1a.jpg?auto=format&fit=crop&w=600&q=80" alt="Faculty member">
+                <h3>Prof. Arjun Verma</h3>
+                <p>Business Management<br>
+                Leadership and Strategy</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="facilities" style="background:#fff4f6;">
+        <h2>Campus Facilities</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=600&q=80" alt="Library">
+                <h3>Modern Library</h3>
+                <p>A peaceful learning space with books
+                and academic resources.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://i.pinimg.com/736x/e4/8b/5f/e48b5feb0eec09b07e287741aea9f0c4.jpg?auto=format&fit=crop&w=600&q=80" alt="Classroom">
+                <h3>Smart Classrooms</h3>
+                <p>Interactive classrooms designed
+                to support effective learning.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=600&q=80" alt="Student campus">
+                <h3>Student Activities</h3>
+                <p>Events, cultural programs, clubs,
+                and opportunities to grow.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="admissions">
+        <h2>Admissions 2027</h2>
+        <p>Begin your academic journey with BRAT University!</p>
+
+        <div class="steps">
+            <p> <b>Step 1:</b> Choose your preferred course.</p>
+            <p> <b>Step 2:</b> Check eligibility requirements.</p>
+            <p> <b>Step 3:</b> Complete the application form.</p>
+            <p> <b>Step 4:</b> Submit the required documents.</p>
+            <p> <b>Step 5:</b> Follow the admission confirmation process.</p>
+        </div>
+
+        <a href="#contact" class="btn">Enquire Now</a>
+    </section>
+
+    <section class="apply">
+        <h2>Campus Life & Events</h2>
+        <p>Experience exciting cultural festivals, technical workshops,
+        sports competitions, and student activities.</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+
+        <p> Address: University Road, Hyderabad, India</p>
+        <p> Email: admissions@bratuniversity.edu</p>
+        <p> Phone: +91 98765 43210</p>
+        <p> Office Hours: Monday – Saturday, 9 AM – 5 PM</p>
+    </section>
+
+    <footer>
+        <p>© 2027 BRAT University | All Rights Reserved</p>
+        <p>Knowledge • Innovation • Excellence</p>
+    </footer>
+
+</body>
+</html>
